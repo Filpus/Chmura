@@ -1,3 +1,8 @@
+using Aplication2;
+
+
+RunReceiver.Main(args);
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 

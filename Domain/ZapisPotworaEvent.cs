@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain7
+namespace Domain1
 {
     public class ZapisPotworaEvent
     {

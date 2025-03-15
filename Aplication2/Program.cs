@@ -1,10 +1,9 @@
 ﻿
-using Aplication1;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace Aplication1
+namespace Aplication2
 {
     public class RunReceiver
     {
@@ -37,7 +36,7 @@ namespace Aplication1
                 using (var channel = await connection.CreateChannelAsync())
                 {
 
-                    BestiariuszReceiver bibliotekaPublisher = new BestiariuszReceiver(channel);
+                    BibliotekaReceiver bibliotekaPublisher = new BibliotekaReceiver(channel);
                     bibliotekaPublisher.Run();
                 }
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain3
+namespace Domain5
 {
     public class UdanyAtakEvent
     {

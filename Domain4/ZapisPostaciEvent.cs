@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain1
+namespace Domain4
 {
-    internal class ZapisPostaciEvent
+    public class ZapisPostaciEvent
     {
+        public Guid EventId { get; set; }
+        public DateTime Timestamp { get; set; }
+        public string Data { get; set; }
     }
 }

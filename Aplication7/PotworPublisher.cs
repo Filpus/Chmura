@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Domain4;
+using Domain7;
 
-namespace Aplication4
+namespace Aplication7
 {
-    public class GraczPublisher
+    public class PotworPublisher
     {
 
         private readonly IChannel _channel;
 
-        public GraczPublisher(IChannel channel)
+        public PotworPublisher(IChannel channel)
         {
             _channel = channel;
         }
@@ -42,7 +42,7 @@ namespace Aplication4
 
             while (true)
             {
-                Publish(new ZapisPostaciEvent()
+                Publish(new ZapisPotworaEvent()
                 {
                     EventId = Guid.NewGuid(),
                     Timestamp = DateTime.UtcNow,

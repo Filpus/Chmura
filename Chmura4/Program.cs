@@ -1,3 +1,9 @@
+using Aplication4;
+
+
+
+RunPublisher.Main([]);
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 

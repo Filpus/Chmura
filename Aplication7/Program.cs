@@ -1,12 +1,10 @@
-﻿
-using Aplication1;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace Aplication1
+namespace Aplication7
 {
-    public class RunReceiver
+    public class RunPublisher
     {
 
 
@@ -20,7 +18,7 @@ namespace Aplication1
             });
 
             // Tworzenie loggera dla głównego programu
-            var logger = loggerFactory.CreateLogger<RunReceiver>();
+            var logger = loggerFactory.CreateLogger<RunPublisher>();
 
             // Przykładowe logowanie
             logger.LogInformation("Aplikacja została uruchomiona.");
@@ -37,8 +35,8 @@ namespace Aplication1
                 using (var channel = await connection.CreateChannelAsync())
                 {
 
-                    BestiariuszReceiver bibliotekaPublisher = new BestiariuszReceiver(channel);
-                    bibliotekaPublisher.Run();
+                    PotworPublisher potworPublisher = new PotworPublisher(channel);
+                    potworPublisher.Run();
                 }
             }
         }

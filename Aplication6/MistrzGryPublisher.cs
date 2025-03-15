@@ -5,16 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Domain4;
-
-namespace Aplication4
+using Domain6;
+namespace Aplication6
 {
-    public class GraczPublisher
+    public class MistrzGryPublisher
     {
 
         private readonly IChannel _channel;
 
-        public GraczPublisher(IChannel channel)
+        public MistrzGryPublisher(IChannel channel)
         {
             _channel = channel;
         }
@@ -42,15 +41,15 @@ namespace Aplication4
 
             while (true)
             {
-                Publish(new ZapisPostaciEvent()
+                Publish(new ProbaAtakuEvent()
                 {
                     EventId = Guid.NewGuid(),
                     Timestamp = DateTime.UtcNow,
                     Data = "Dane postaci"
                 });
 
-
-                Thread.Sleep(10000);
+                Random random = new Random();
+                Thread.Sleep(random.Next(3000, 10000));
             }
 
         }
