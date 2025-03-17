@@ -1,0 +1,6 @@
+2025-03-17 17:17:52 - [x] Subskrybent nasłuchuje na kolejce 'zapispostaci'
+2025-03-17 17:17:52 - Nasłuchiwanie rozpoczęte. Naciśnij dowolny klawisz, aby zakończyć.
+2025-03-17 17:17:55 - [x] Odebrano wiadomość z kolejki 'zapispostaci': {"EventId":"8004a09f-d24d-4242-a49c-5122896d8aa6","Timestamp":"2025-03-17T16:17:55.2870822Z","Data":"Dane postaci"}
+2025-03-17 17:18:04 - [x] Odebrano wiadomość z kolejki 'zapispostaci': {"EventId":"b26650ea-37bb-454f-acac-3df2bcf1c72d","Timestamp":"2025-03-17T16:18:04.6178514Z","Data":"Dane postaci"}
+2025-03-17 17:18:07 - [x] Odebrano wiadomość z kolejki 'zapispostaci': {"EventId":"301ad826-881a-448f-88a8-7c6c8db3fa89","Timestamp":"2025-03-17T16:18:07.3426908Z","Data":"Dane postaci"}
+2025-03-17 17:18:15 - [x] Odebrano wiadomość z kolejki 'zapispostaci': {"EventId":"47c6f552-0dff-4db2-ba4d-f45f9475e3ce","Timestamp":"2025-03-17T16:18:15.9305686Z","Data":"Dane postaci"}

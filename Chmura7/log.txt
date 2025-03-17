@@ -1,0 +1,4 @@
+2025-03-17 17:17:51 - [x] Opublikowano wiadomość do kolejki 'zapispotwora': {"EventId":"a6f28b92-a8b6-4e77-aebb-587c89e8fea5","Timestamp":"2025-03-17T16:17:50.9512356Z","Data":"Dane postaci"}
+2025-03-17 17:18:00 - [x] Opublikowano wiadomość do kolejki 'zapispotwora': {"EventId":"2326e8ef-d2de-4e4d-b7bb-a8eccd2e9fb1","Timestamp":"2025-03-17T16:18:00.2854568Z","Data":"Dane postaci"}
+2025-03-17 17:18:06 - [x] Opublikowano wiadomość do kolejki 'zapispotwora': {"EventId":"e8f7049f-b6b7-47f9-b9bd-4c68ba806812","Timestamp":"2025-03-17T16:18:06.0312238Z","Data":"Dane postaci"}
+2025-03-17 17:18:13 - [x] Opublikowano wiadomość do kolejki 'zapispotwora': {"EventId":"ec076449-4236-4027-8926-50e409e1a719","Timestamp":"2025-03-17T16:18:13.4762484Z","Data":"Dane postaci"}

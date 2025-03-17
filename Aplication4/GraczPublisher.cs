@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Domain4;
+using Microsoft.Extensions.Logging;
 
 namespace Aplication4
 {
@@ -29,6 +30,7 @@ namespace Aplication4
 
             _channel.BasicPublishAsync(exchange: "", routingKey: queueName, body: body);
             Console.WriteLine($"[x] Opublikowano wiadomość do kolejki '{queueName}': {messageBody}");
+            Logger.Log($"[x] Opublikowano wiadomość do kolejki '{queueName}': {messageBody}");
         }
 
         private static string GetQueueName(Type eventType)
@@ -53,6 +55,18 @@ namespace Aplication4
                 Thread.Sleep(10000);
             }
 
+        }
+    }
+    class Logger
+    {
+        private static readonly string logFilePath = "log.txt";
+
+        public static void Log(string message)
+        {
+            using (StreamWriter writer = File.AppendText(logFilePath))
+            {
+                writer.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
+            }
         }
     }
 

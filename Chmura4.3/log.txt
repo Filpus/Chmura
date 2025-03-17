@@ -1,0 +1,3 @@
+2025-03-17 17:17:55 - [x] Opublikowano wiadomość do kolejki 'zapispostaci': {"EventId":"8004a09f-d24d-4242-a49c-5122896d8aa6","Timestamp":"2025-03-17T16:17:55.2870822Z","Data":"Dane postaci"}
+2025-03-17 17:18:05 - [x] Opublikowano wiadomość do kolejki 'zapispostaci': {"EventId":"ddbac410-9ef5-483b-8d03-35b5c9ed28ac","Timestamp":"2025-03-17T16:18:05.924818Z","Data":"Dane postaci"}
+2025-03-17 17:18:15 - [x] Opublikowano wiadomość do kolejki 'zapispostaci': {"EventId":"47c6f552-0dff-4db2-ba4d-f45f9475e3ce","Timestamp":"2025-03-17T16:18:15.9305686Z","Data":"Dane postaci"}

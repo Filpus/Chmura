@@ -1,0 +1,10 @@
+2025-03-17 17:17:47 - [x] Subskrybent nasłuchuje na kolejce 'probaataku'
+2025-03-17 17:17:47 - Nasłuchiwanie rozpoczęte. Naciśnij dowolny klawisz, aby zakończyć.
+2025-03-17 17:17:52 - [x] Odebrano wiadomość z kolejki 'probaataku': {"EventId":"59288dc9-48ae-43a7-a67b-2470a88fb9d4","Timestamp":"2025-03-17T16:17:51.489302Z","Data":"Dane postaci"}
+2025-03-17 17:17:52 - [x] Opublikowano wiadomość do kolejki 'udanyatak': {"EventId":"623ff21f-f244-4719-ab82-51176cf55620","Timestamp":"2025-03-17T16:17:52.3462283Z","Data":"Dane ataku"}
+2025-03-17 17:18:02 - [x] Odebrano wiadomość z kolejki 'probaataku': {"EventId":"c4b99412-10f7-437e-9fee-cfb0c1ead7a9","Timestamp":"2025-03-17T16:18:02.8428467Z","Data":"Dane postaci"}
+2025-03-17 17:18:02 - [x] Opublikowano wiadomość do kolejki 'udanyatak': {"EventId":"03e2a07d-32a8-4498-9fac-c391bc20fef3","Timestamp":"2025-03-17T16:18:02.9074798Z","Data":"Dane ataku"}
+2025-03-17 17:18:07 - [x] Odebrano wiadomość z kolejki 'probaataku': {"EventId":"d6f2285a-1d25-4cf1-90b4-38c35325f60c","Timestamp":"2025-03-17T16:18:07.8096608Z","Data":"Dane postaci"}
+2025-03-17 17:18:07 - [x] Opublikowano wiadomość do kolejki 'udanyatak': {"EventId":"062ea55f-5fbe-4ce8-bfcf-4fff93123ee2","Timestamp":"2025-03-17T16:18:07.853019Z","Data":"Dane ataku"}
+2025-03-17 17:18:12 - [x] Odebrano wiadomość z kolejki 'probaataku': {"EventId":"8df5d5f9-0f2e-48a7-acfc-a3f7ea4df72d","Timestamp":"2025-03-17T16:18:12.745637Z","Data":"Dane postaci"}
+2025-03-17 17:18:12 - [x] Opublikowano wiadomość do kolejki 'udanyatak': {"EventId":"f38bb8d5-73c2-4575-8ce9-4f46ea3152b5","Timestamp":"2025-03-17T16:18:12.7804571Z","Data":"Dane ataku"}

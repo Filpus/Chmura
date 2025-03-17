@@ -1,0 +1,4 @@
+2025-03-17 17:17:52 - [x] Opublikowano wiadomość do kolejki 'probaataku': {"EventId":"59288dc9-48ae-43a7-a67b-2470a88fb9d4","Timestamp":"2025-03-17T16:17:51.489302Z","Data":"Dane postaci"}
+2025-03-17 17:18:02 - [x] Opublikowano wiadomość do kolejki 'probaataku': {"EventId":"c4b99412-10f7-437e-9fee-cfb0c1ead7a9","Timestamp":"2025-03-17T16:18:02.8428467Z","Data":"Dane postaci"}
+2025-03-17 17:18:07 - [x] Opublikowano wiadomość do kolejki 'probaataku': {"EventId":"d6f2285a-1d25-4cf1-90b4-38c35325f60c","Timestamp":"2025-03-17T16:18:07.8096608Z","Data":"Dane postaci"}
+2025-03-17 17:18:12 - [x] Opublikowano wiadomość do kolejki 'probaataku': {"EventId":"8df5d5f9-0f2e-48a7-acfc-a3f7ea4df72d","Timestamp":"2025-03-17T16:18:12.745637Z","Data":"Dane postaci"}
