@@ -9,7 +9,7 @@ namespace Aplication2
     {
 
 
-        public static async void Main(string[] args)
+        public  async void Main(string[] args)
         {
 
 
