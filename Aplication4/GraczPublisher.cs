@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using Domain4;
 using Microsoft.Extensions.Logging;
 
-namespace Aplication4
+namespace BazaBroni.Infrastructure
 {
     public class GraczPublisher
     {

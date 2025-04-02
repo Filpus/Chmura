@@ -1,7 +1,6 @@
 ﻿
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
-using System.Text;
 
 namespace Aplication2
 {
@@ -9,7 +8,7 @@ namespace Aplication2
     {
 
 
-        public  async void Main(string[] args)
+        public  async Task Main(string[] args)
         {
 
 

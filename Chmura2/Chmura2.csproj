@@ -16,4 +16,9 @@
     <ProjectReference Include="..\Domain2\Domain2.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>

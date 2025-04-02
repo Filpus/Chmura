@@ -12,8 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Aplication4\Aplication4.csproj" />
+    <ProjectReference Include="..\Aplication4\BazaBroni.Infrastructure.csproj" />
     <ProjectReference Include="..\Domain4\Domain4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,10 @@
 ﻿using Domain3;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Aplication3
 {
@@ -21,7 +17,7 @@ namespace Aplication3
             _channel = channel;
         }
 
-        public void StartConsuming()
+        private void StartConsuming()
         {
             string queueName = GetQueueName(typeof(ProbaAtakuEvent));
             _channel.QueueDeclareAsync(queue: queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
@@ -47,7 +43,7 @@ namespace Aplication3
             Logger.Log($"[x] Subskrybent nasłuchuje na kolejce '{queueName}'");
         }
 
-        public void Publish<T>(T eventMessage)
+        private void Publish<T>(T eventMessage)
         {
             string queueName = GetQueueName(typeof(T));
             _channel.QueueDeclareAsync(queue: queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);

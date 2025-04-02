@@ -16,4 +16,10 @@
     <ProjectReference Include="..\Domain4\Domain4.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CommandHandlers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="QueryHandlers\" />
+  </ItemGroup>
+
 </Project>
