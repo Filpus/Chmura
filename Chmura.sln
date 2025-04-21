@@ -12,8 +12,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazaPotworow", "BazaPotworow", "{9989114A-5885-40C7-946A-256A7E98AFEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazaPostaci", "BazaPostaci", "{CE1BB40E-FDF2-4A6D-9B6E-2CA9D4116F3B}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaBroni.Api", "Chmura2\BazaBroni.Api.csproj", "{CF56311A-11F2-49E1-9AC6-B7D797E60639}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPostaci.Api", "Chmura2\BazaPostaci.Api.csproj", "{CF56311A-11F2-49E1-9AC6-B7D797E60639}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zakończenie", "Zakończenie", "{A0F61D76-AF59-4E91-A442-A117BDF8DE37}"
 EndProject
@@ -27,13 +30,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MistrzGry", "MistrzGry", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPostaci.Infrastructure", "Aplication2\BazaPostaci.Infrastructure.csproj", "{A9E55FBD-1E4E-4906-9E62-80F92504B900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaBroni.Domain", "Domain2\BazaBroni.Domain.csproj", "{673432FB-177C-4003-AF54-F2F98C3C885F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPostaci.Domain", "Domain2\BazaPostaci.Domain.csproj", "{673432FB-177C-4003-AF54-F2F98C3C885F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorRzutow.Infrastructure", "Aplication3\GeneratorRzutow.Infrastructure.csproj", "{93DAAC42-5CB0-43F7-98B5-FEF8251D0B24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorRzutow.Domain", "Domain3\GeneratorRzutow.Domain.csproj", "{CB5D0DDA-365B-43BC-BCC4-5003B2585B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorRzutow,Api", "Chmura3\GeneratorRzutow,Api.csproj", "{DF48B0D2-9A65-45AA-A9E2-5549D6DDC71C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorRzutow.Api", "Chmura3\GeneratorRzutow.Api.csproj", "{DF48B0D2-9A65-45AA-A9E2-5549D6DDC71C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaBroni.Api", "Chmura4\BazaBroni.Api.csproj", "{DBC08D6B-C8B3-4620-9718-AE4DBD4044C7}"
 EndProject
@@ -41,7 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorObrazen.Api", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MistrzGry.Api", "Chmura6\MistrzGry.Api.csproj", "{942FA5C5-6AA2-4055-845B-84302F8E2F4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chmura7", "Chmura7\Chmura7.csproj", "{9529397F-7460-4860-BC83-C6DCDAB9E4E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zakonczenie.Api", "Chmura7\Zakonczenie.Api.csproj", "{9529397F-7460-4860-BC83-C6DCDAB9E4E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaBroni.Infrastructure", "Aplication4\BazaBroni.Infrastructure.csproj", "{05A130BD-7E8D-42FB-B881-CCA986AF9D38}"
 EndProject
@@ -49,7 +52,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorObrazen.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MistrzGry.Infrastructure", "Aplication6\MistrzGry.Infrastructure.csproj", "{583818A1-21BE-4D40-BDEB-CFC161A57E8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplication7", "Aplication7\Aplication7.csproj", "{D1064015-BEFF-4843-988E-691FA17F9BB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zakonczenie.Infrastructure", "Aplication7\Zakonczenie.Infrastructure.csproj", "{D1064015-BEFF-4843-988E-691FA17F9BB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaBroni.Domain", "Domain4\BazaBroni.Domain.csproj", "{A78605E2-C560-4E74-BC38-2FD5071E1455}"
 EndProject
@@ -57,7 +60,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorObrazen.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MistrzGry.Domain", "Domain6\MistrzGry.Domain.csproj", "{7082BF6D-DAC2-4829-9BBE-9FFEA3FCF3F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain7", "Domain7\Domain7.csproj", "{8520135E-2E46-4E3E-AADA-00221D33BB63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zakonczenie.Domain", "Domain7\Zakonczenie.Domain.csproj", "{8520135E-2E46-4E3E-AADA-00221D33BB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5D0A9F6B-F398-4C26-8E42-F29B88A92B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWC.Infra.Bus", "PWC.Infra.Bus\PWC.Infra.Bus.csproj", "{909D4243-EDBF-4CB7-8E2F-D8DA5E655321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWC.Common.Domain", "PWC.Common.Domain\PWC.Common.Domain.csproj", "{A6468835-0399-49E3-BD49-4A9B5EB5A2A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +158,14 @@ Global
 		{8520135E-2E46-4E3E-AADA-00221D33BB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8520135E-2E46-4E3E-AADA-00221D33BB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8520135E-2E46-4E3E-AADA-00221D33BB63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909D4243-EDBF-4CB7-8E2F-D8DA5E655321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909D4243-EDBF-4CB7-8E2F-D8DA5E655321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909D4243-EDBF-4CB7-8E2F-D8DA5E655321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909D4243-EDBF-4CB7-8E2F-D8DA5E655321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6468835-0399-49E3-BD49-4A9B5EB5A2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6468835-0399-49E3-BD49-4A9B5EB5A2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6468835-0399-49E3-BD49-4A9B5EB5A2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6468835-0399-49E3-BD49-4A9B5EB5A2A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,5 +192,7 @@ Global
 		{90C957A5-5C28-4078-9619-3B1D1449CE73} = {19BD30FF-6991-4F33-9B91-8A266D15691F}
 		{7082BF6D-DAC2-4829-9BBE-9FFEA3FCF3F3} = {523F21F7-550C-4EAE-8F08-06593DFB0A7E}
 		{8520135E-2E46-4E3E-AADA-00221D33BB63} = {A0F61D76-AF59-4E91-A442-A117BDF8DE37}
+		{909D4243-EDBF-4CB7-8E2F-D8DA5E655321} = {5D0A9F6B-F398-4C26-8E42-F29B88A92B76}
+		{A6468835-0399-49E3-BD49-4A9B5EB5A2A7} = {5D0A9F6B-F398-4C26-8E42-F29B88A92B76}
 	EndGlobalSection
 EndGlobal
