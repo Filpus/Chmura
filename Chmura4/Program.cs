@@ -1,13 +1,51 @@
-using Aplication4;
 
+using BazaBroni.Domain.Entities;
+using BazaBroni.Domain.Events;
+using BazaBroni.Infrastructure.EventHandlers;
+using PWC.Common.Domain.Bus;
+using PWC.Infra.Bus;
+using Serilog;
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
-RunPublisher runPublisher = new RunPublisher();
-runPublisher.Main(args);
+try
+{
+    Log.Information("Starting web application");
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+    var builder = WebApplication.CreateBuilder(args);
 
-app.MapGet("/", () => "Hello World!");
+    // Dodanie Serilog jako globalnego loggera
+    builder.Host.UseSerilog();
 
-app.Run();
+    builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+    // Rejestracja RabbitMQBus jako Event Bus
+    builder.Services.AddSingleton<IEventBus, RabbitMQBus>();
+
+    // Rejestracja SupabaseService dla modelu Character
+    builder.Services.AddSingleton<SupabaseService<Weapon>>();
+
+    // Rejestracja handlera dla zdarzenia TakeCharacterEvent
+    builder.Services.AddScoped<IEventHandler<TakeWeaponEvent>, TakeWeaponHandler>();
+
+    var app = builder.Build();
+
+    // Subskrypcja zdarzenia TakeCharacterEvent
+    var eventBus = app.Services.GetRequiredService<IEventBus>();
+    await eventBus.Subscribe<TakeWeaponEvent, TakeWeaponHandler>();
+
+    app.MapGet("/", () => "Hello World!");
+
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

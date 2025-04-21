@@ -1,17 +1,51 @@
 
+using BazaPotworow.Domain.Entities;
+using BazaPotworow.Domain.Events;
+using BazaPotworow.Infrastructure.EventHandlers;
+using PWC.Common.Domain.Bus;
+using PWC.Infra.Bus;
+using Serilog;
 
-using Aplication1;
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
+try
+{
+    Log.Information("Starting web application");
 
+    var builder = WebApplication.CreateBuilder(args);
 
-RunReceiver.Main([]);
+    // Dodanie Serilog jako globalnego loggera
+    builder.Host.UseSerilog();
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+    builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
-app.MapGet("/", () => "Hello World!");
+    // Rejestracja RabbitMQBus jako Event Bus
+    builder.Services.AddSingleton<IEventBus, RabbitMQBus>();
 
-app.Run();
+    // Rejestracja SupabaseService dla modelu Character
+    builder.Services.AddSingleton<SupabaseService<Enemy>>();
 
+    // Rejestracja handlera dla zdarzenia TakeCharacterEvent
+    builder.Services.AddScoped<IEventHandler<TakeEnemyEvent>, TakeEnemyHandler>();
 
+    var app = builder.Build();
 
+    // Subskrypcja zdarzenia TakeCharacterEvent
+    var eventBus = app.Services.GetRequiredService<IEventBus>();
+    await eventBus.Subscribe<TakeEnemyEvent, TakeEnemyHandler>();
+
+    app.MapGet("/", () => "Hello World!");
+
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

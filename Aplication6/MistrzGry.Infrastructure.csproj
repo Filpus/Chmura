@@ -10,11 +10,16 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="RabbitMQ.Client" Version="7.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Supabase" Version="1.1.1" />
+    <PackageReference Include="Supabase.Postgrest" Version="4.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Domain6\MistrzGry.Domain.csproj" />
+    <ProjectReference Include="..\PWC.Common.Domain\PWC.Common.Domain.csproj" />
+    <ProjectReference Include="..\PWC.Infra.Bus\PWC.Infra.Bus.csproj" />
   </ItemGroup>
 
   <ItemGroup>
