@@ -30,7 +30,7 @@ namespace BazaPostaci.Infrastructure.EventHandler
         {
             int characterId = @event.CharacterId;
             int enemyId = @event.EnemyId;
-            Console.WriteLine($"Handling TakeCharacterEvent: CharacterId={characterId}, EnemyId={enemyId}");
+
             _logger.LogInformation("Handling TakeCharacterEvent: CharacterId={CharacterId}, EnemyId={EnemyId}", characterId, enemyId);
 
             try

@@ -49,16 +49,16 @@ namespace KalkulatorObrazen.Infrastructure.EventHandlers
 
                 if (weapon != null)
                 {
-                    if (enemy.Vulnerability == weapon.DamageType)
-                    {
-                        totalDamage *= 2;
-                        _logger.LogInformation("Enemy is vulnerable to {DamageType}. Damage doubled.", weapon.DamageType);
-                    }
-                    else if (enemy.Resistance == weapon.DamageType)
-                    {
-                        totalDamage /= 2;
-                        _logger.LogInformation("Enemy is resistant to {DamageType}. Damage halved.", weapon.DamageType);
-                    }
+                if (enemy.Vulnerability == weapon.DamageType)
+                {
+                    totalDamage *= 2;
+                    _logger.LogInformation("Enemy is vulnerable to {DamageType}. Damage doubled.", weapon.DamageType);
+                }
+                else if (enemy.Resistance == weapon.DamageType)
+                {
+                    totalDamage /= 2;
+                    _logger.LogInformation("Enemy is resistant to {DamageType}. Damage halved.", weapon.DamageType);
+                }
                 }
 
                 _logger.LogInformation("Calculated damage: {TotalDamage}", totalDamage);

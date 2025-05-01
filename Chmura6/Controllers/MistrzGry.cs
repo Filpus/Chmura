@@ -45,10 +45,10 @@ namespace MistrzGry.Api.Controllers
                     _logger.LogError("characterId or enemyId is null.");
                     return NotFound(new { Error = "characterId and enemyId cannot be null." });
                 }
-                // Tworzenie zdarzenia  
+                // Tworzenie zdarzenia
                 var takeCharacterEvent = new TakeCharacterEvent(characterId, enemyId);
 
-                // Publikowanie zdarzenia  
+                // Publikowanie zdarzenia
                 await _eventBus.Publish(takeCharacterEvent);
                 _logger.LogInformation("TakeCharacterEvent published: CharacterId={CharacterId}, EnemyId={EnemyId}", characterId, enemyId);
                 return Ok(new { Message = "TakeCharacterEvent published successfully." });
